@@ -3,28 +3,38 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Clock, Award, Users, TrendingUp } from "lucide-react";
+import { Clock, Award, Users, TrendingUp, FileCheck, Globe } from "lucide-react";
 
 const features = [
   {
     icon: <Clock className="w-6 h-6" />,
-    title: "25+ let zkušeností",
-    description: "Dlouhodobé zkušenosti na trhu průmyslových armatur a čerpadel"
+    title: "Od roku 1994",
+    description: "Více než 25 let zkušeností v oblasti průmyslových armatur a čerpadel"
   },
   {
     icon: <Award className="w-6 h-6" />,
-    title: "Kvalitní produkty",
-    description: "Dodáváme pouze certifikované výrobky od prověřených výrobců"
+    title: "Certifikované produkty",
+    description: "Dodáváme pouze certifikované výrobky dle EN, API, ANSI a dalších standardů"
   },
   {
     icon: <Users className="w-6 h-6" />,
-    title: "Profesionální tým",
-    description: "Naši odborníci vám pomohou s výběrem optimálního řešení"
+    title: "Odborné poradenství",
+    description: "Naši specialisté vám pomohou s výběrem optimálního řešení pro vaši aplikaci"
   },
   {
     icon: <TrendingUp className="w-6 h-6" />,
-    title: "Spolehlivý partner",
-    description: "Dlouhodobě spolupracujeme s významnými průmyslovými podniky"
+    title: "Komplexní řešení",
+    description: "Od návrhu až po dodávku kompletních armaturních sestav na klíč"
+  },
+  {
+    icon: <FileCheck className="w-6 h-6" />,
+    title: "Záruční i pozáruční servis",
+    description: "Zajišťujeme kompletní servis a dodávky náhradních dílů"
+  },
+  {
+    icon: <Globe className="w-6 h-6" />,
+    title: "Mezinárodní spolupráce",
+    description: "Spolupracujeme s předními světovými výrobci a dodáváme po celé Evropě"
   }
 ];
 
@@ -61,10 +71,13 @@ const About = () => {
               className="mb-8"
             >
               <p className="text-odra-dark-gray/70 mb-4">
-                Naše společnost vznikla v roce 1994 a od té doby se stala spolehlivým partnerem pro mnoho průmyslových podniků v České republice i v zahraničí. Zaměřujeme se na dodávky kvalitních produktů, které splňují ty nejnáročnější požadavky našich zákazníků.
+                Naše společnost vznikla v roce 1994 jako specializovaná firma na dodávky průmyslových armatur. Od té doby jsme rozšířili náš sortiment o čerpadla a příslušenství a stali jsme se spolehlivým partnerem pro mnoho průmyslových podniků v České republice i v zahraničí.
+              </p>
+              <p className="text-odra-dark-gray/70 mb-4">
+                Zaměřujeme se na dodávky armatur, čerpadel a jejich příslušenství pro energetiku, teplárenství, plynárenství, vodárenství, chemii a petrochemii, papírenský, farmaceutický, potravinářský a další průmysl.
               </p>
               <p className="text-odra-dark-gray/70">
-                Díky našim dlouholetým zkušenostem a odbornému týmu jsme schopni nabídnout komplexní řešení pro nejrůznější aplikace v teplárenství, energetice, chemickém průmyslu, vodárenství a dalších odvětvích.
+                Při plnění požadavků zákazníků klademe důraz na vysokou kvalitu produktů, dodržování termínů a příznivou cenu. Díky tomu se nám daří udržovat dlouhodobé vztahy s našimi zákazníky.
               </p>
             </motion.div>
 
@@ -77,7 +90,7 @@ const About = () => {
               whileTap={{ scale: 0.97 }}
               className="inline-block px-6 py-3 bg-odra-blue text-white rounded-md font-medium transition-all hover:shadow-lg hover:shadow-odra-blue/20"
             >
-              Spojte se s námi
+              Kontaktujte nás
             </motion.a>
           </div>
 

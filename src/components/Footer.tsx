@@ -16,20 +16,20 @@ const Footer = () => {
               transition={{ duration: 0.8 }}
               className="mb-6"
             >
-              <div className="text-2xl font-bold text-white mb-4">ODRA TRADING</div>
+              <div className="text-2xl font-bold text-white mb-4">ODRA TRADING spol. s r.o.</div>
               <p className="text-white/70 max-w-md">
-                Specialista na průmyslové armatury a čerpadla s více než 25 lety zkušeností. 
-                Dodáváme kvalitní produkty pro nejrůznější průmyslová odvětví.
+                Specialista na průmyslové armatury a čerpadla od roku 1994. 
+                Dodáváme kvalitní produkty pro energetiku, teplárenství, plynárenství, vodárenství, chemický průmysl a další odvětví.
               </p>
             </motion.div>
           </div>
 
           <div className="md:col-span-3">
-            <h3 className="text-lg font-semibold mb-4">Rychlé odkazy</h3>
+            <h3 className="text-lg font-semibold mb-4">Navigace</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#home" className="text-white/70 hover:text-white transition-colors">
-                  Domů
+                  Úvod
                 </a>
               </li>
               <li>
@@ -39,7 +39,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#about" className="text-white/70 hover:text-white transition-colors">
-                  O nás
+                  O společnosti
                 </a>
               </li>
               <li>
@@ -63,6 +63,11 @@ const Footer = () => {
                 </a>
               </p>
               <p>
+                <a href="tel:+420596624432" className="hover:text-white transition-colors">
+                  Tel: +420 596 624 432
+                </a>
+              </p>
+              <p>
                 <a href="mailto:info@odratrading.cz" className="hover:text-white transition-colors">
                   Email: info@odratrading.cz
                 </a>
@@ -73,7 +78,7 @@ const Footer = () => {
 
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 text-sm mb-4 md:mb-0">
-            &copy; {currentYear} ODRA TRADING spol. s.r.o. Všechna práva vyhrazena.
+            &copy; {currentYear} ODRA TRADING spol. s.r.o. Všechna práva vyhrazena. | IČ: 47683180 | DIČ: CZ47683180
           </p>
           <div className="flex space-x-4">
             <a href="#" className="text-white/70 hover:text-white transition-colors text-sm">

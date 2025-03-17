@@ -32,8 +32,8 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-odra-dark-gray"
             >
-              Kvalitní řešení <br />
-              <span className="text-odra-blue">pro vaše projekty</span>
+              ODRA TRADING <br />
+              <span className="text-odra-blue">Váš dodavatel průmyslových armatur</span>
             </motion.h1>
             
             <motion.p 
@@ -42,7 +42,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-odra-dark-gray/70 max-w-lg"
             >
-              Jsme specialisté na dodávky průmyslových armatur, čerpadel a příslušenství s více než 25 lety zkušeností na trhu.
+              Společnost ODRA TRADING spol. s r.o. byla založena v roce 1994 jako specializovaná společnost na dodávky průmyslových armatur, čerpadel a jejich příslušenství pro širokou škálu průmyslových odvětví.
             </motion.p>
             
             <motion.div 
@@ -57,7 +57,7 @@ const Hero = () => {
                 whileTap={{ scale: 0.97 }}
                 className="px-6 py-3 bg-odra-blue text-white rounded-md font-medium transition-all hover:shadow-lg hover:shadow-odra-blue/20 text-center"
               >
-                Prohlédnout produkty
+                Naše produkty
               </motion.a>
               <motion.a 
                 href="#contact"

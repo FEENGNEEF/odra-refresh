@@ -8,37 +8,49 @@ const productCategories = [
   {
     id: "armatury",
     name: "Průmyslové armatury",
-    description: "Široká nabídka armatur pro různé průmyslové aplikace",
+    description: "Dodáváme kompletní sortiment průmyslových armatur v širokém spektru materiálových provedení, tlakových tříd, typů připojení, materiálů těsnění a ovládání.",
     image: "https://images.unsplash.com/photo-1523242942811-8a2bdb077ad0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Kulové kohouty", description: "Pro efektivní regulaci průtoku" },
-      { name: "Šoupátka", description: "Ideální pro úplné uzavření potrubí" },
-      { name: "Klapky", description: "Kompaktní řešení pro různé aplikace" },
-      { name: "Ventily", description: "Přesná regulace médií v potrubních systémech" },
+      { name: "Uzavírací armatury", description: "Kulové kohouty, Šoupátka, Klapky, Ventily" },
+      { name: "Regulační armatury", description: "Regulační ventily, Klapky a kohouty, Redukční ventily" },
+      { name: "Pojistné armatury", description: "Pojistné ventily, Přerušovače vakua, Odvzdušňovací ventily" },
+      { name: "Speciální armatury", description: "Pro ropný, plynárenský a chemický průmysl" },
     ]
   },
   {
     id: "cerpadla",
     name: "Čerpadla",
-    description: "Kvalitní čerpadla pro přepravu kapalin v průmyslu",
+    description: "Nabízíme široký sortiment čerpadel pro různá průmyslová odvětví včetně čerpadel pro agresivní a abrazivní média, potravinářský průmysl a čistírny odpadních vod.",
     image: "https://images.unsplash.com/photo-1596731498067-846ee9d6b9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Odstředivá čerpadla", description: "Pro vysoké průtoky a nižší tlaky" },
-      { name: "Objemová čerpadla", description: "Ideální pro viskózní kapaliny" },
-      { name: "Ponorná čerpadla", description: "Pro čerpání z hlubokých zdrojů" },
-      { name: "Dávkovací čerpadla", description: "Přesné dávkování chemikálií" },
+      { name: "Odstředivá čerpadla", description: "Horizontální, Vertikální, Vícestupňová, In-line" },
+      { name: "Objemová čerpadla", description: "Zubová, Vřetenová, Membránová, Pístová" },
+      { name: "Ponorná čerpadla", description: "Pro odpadní vody, Pro chemikálie, S mělnícím zařízením" },
+      { name: "Dávkovací čerpadla", description: "Elektromagnetická, Motorová, Pro chemické procesy" },
     ]
   },
   {
     id: "prislusenstvi",
     name: "Příslušenství",
-    description: "Doplňkové vybavení pro komplexní řešení",
+    description: "Kompletní sortiment příslušenství pro průmyslové armatury a čerpadla, včetně pohonů, filtrů, kompenzátorů a měřící techniky.",
     image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Pohony", description: "Elektrické a pneumatické pohony pro armatury" },
-      { name: "Filtry", description: "Pro ochranu před nečistotami" },
-      { name: "Těsnění", description: "Kvalitní těsnící materiály" },
-      { name: "Měřící technika", description: "Přesné měření průtoku a tlaku" },
+      { name: "Pohony", description: "Elektrické, Pneumatické, Hydraulické, Elektrohydraulické" },
+      { name: "Filtry", description: "Y-filtry, Koše, Sací koše, Automatické filtry" },
+      { name: "Kompenzátory", description: "Kovové, Pryžové, PTFE, Tkaninové" },
+      { name: "Měřící technika", description: "Průtokoměry, Tlakoměry, Teploměry, Hladinoměry" },
+    ]
+  },
+  {
+    id: "odvetvi",
+    name: "Průmyslová odvětví",
+    description: "Dodáváme produkty pro širokou škálu průmyslových odvětví s důrazem na specifické požadavky jednotlivých aplikací.",
+    image: "https://images.unsplash.com/photo-1453733190371-0a9bedd82893?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    products: [
+      { name: "Teplárenství a energetika", description: "Armatury pro páru, horkou a teplou vodu" },
+      { name: "Chemický průmysl", description: "Armatury pro agresivní média a nebezpečné látky" },
+      { name: "Vodárenství a čistírny vod", description: "Speciální armatury pro pitnou a odpadní vodu" },
+      { name: "Plynárenství a ropný průmysl", description: "Armatury dle API a dalších standardů" },
     ]
   }
 ];
@@ -80,8 +92,7 @@ const Products = () => {
             Komplexní řešení pro průmysl
           </h2>
           <p className="text-odra-dark-gray/70 max-w-2xl mx-auto">
-            Nabízíme široký sortiment kvalitních produktů od renomovaných výrobců
-            pro různá průmyslová odvětví.
+            Nabízíme kompletní sortiment průmyslových armatur, čerpadel a příslušenství od renomovaných světových i domácích výrobců s důrazem na dlouhodobou spolehlivost.
           </p>
         </motion.div>
 

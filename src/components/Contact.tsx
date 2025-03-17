@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Printer, Clock } from "lucide-react";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -22,17 +22,39 @@ const Contact = () => {
     },
     {
       icon: <Phone className="w-5 h-5" />,
-      title: "Telefon",
+      title: "Kontakty",
       details: [
-        "+420 596 624 434",
-        "+420 596 624 432"
+        "Tel: +420 596 624 434",
+        "Tel: +420 596 624 432",
+        "Fax: +420 596 624 431"
       ]
     },
     {
       icon: <Mail className="w-5 h-5" />,
-      title: "E-mail",
+      title: "E-mail a web",
       details: [
-        "info@odratrading.cz"
+        "info@odratrading.cz",
+        "obchod@odratrading.cz",
+        "www.odratrading.cz"
+      ]
+    }
+  ];
+
+  const departments = [
+    {
+      title: "Obchodní oddělení",
+      contacts: [
+        "Ing. Roman Kružík",
+        "Tel: +420 596 624 432",
+        "Email: roman.kruzik@odratrading.cz"
+      ]
+    },
+    {
+      title: "Jednatel společnosti",
+      contacts: [
+        "Ing. Petr Hradil",
+        "Tel: +420 596 624 434",
+        "Email: petr.hradil@odratrading.cz"
       ]
     }
   ];
@@ -53,8 +75,8 @@ const Contact = () => {
             Jak nás můžete kontaktovat
           </h2>
           <p className="text-odra-dark-gray/70 max-w-2xl mx-auto">
-            Máte-li jakýkoliv dotaz nebo potřebujete poradit s výběrem produktů, neváhejte nás kontaktovat.
-            Náš tým je připraven vám pomoci.
+            Máte-li jakýkoliv dotaz ohledně našich produktů nebo potřebujete poradit s výběrem, neváhejte nás kontaktovat.
+            Náš tým specialistů je připraven vám pomoci.
           </p>
         </motion.div>
 
@@ -79,6 +101,29 @@ const Contact = () => {
                 {item.details.map((detail, i) => (
                   <p key={i} className="text-odra-dark-gray/70 mb-1">
                     {detail}
+                  </p>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {departments.map((dept, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+              className="p-6 rounded-lg bg-white border border-odra-blue/10 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <h3 className="text-lg font-semibold text-odra-dark-gray mb-3">
+                {dept.title}
+              </h3>
+              <div>
+                {dept.contacts.map((contact, i) => (
+                  <p key={i} className="text-odra-dark-gray/70 mb-1">
+                    {contact}
                   </p>
                 ))}
               </div>
@@ -113,48 +158,79 @@ const Contact = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-odra-dark-gray mb-1">
-                    Jméno
+                    Jméno a příjmení *
                   </label>
                   <input
                     type="text"
                     id="name"
                     className="w-full px-4 py-2 rounded-md border border-odra-light-gray focus:outline-none focus:ring-2 focus:ring-odra-blue/50 focus:border-odra-blue transition-colors"
-                    placeholder="Vaše jméno"
+                    placeholder="Vaše jméno a příjmení"
+                    required
                   />
                 </div>
                 <div>
+                  <label htmlFor="company" className="block text-sm font-medium text-odra-dark-gray mb-1">
+                    Společnost
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    className="w-full px-4 py-2 rounded-md border border-odra-light-gray focus:outline-none focus:ring-2 focus:ring-odra-blue/50 focus:border-odra-blue transition-colors"
+                    placeholder="Název vaší společnosti"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
                   <label htmlFor="email" className="block text-sm font-medium text-odra-dark-gray mb-1">
-                    E-mail
+                    E-mail *
                   </label>
                   <input
                     type="email"
                     id="email"
                     className="w-full px-4 py-2 rounded-md border border-odra-light-gray focus:outline-none focus:ring-2 focus:ring-odra-blue/50 focus:border-odra-blue transition-colors"
                     placeholder="Váš e-mail"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-odra-dark-gray mb-1">
+                    Telefon
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    className="w-full px-4 py-2 rounded-md border border-odra-light-gray focus:outline-none focus:ring-2 focus:ring-odra-blue/50 focus:border-odra-blue transition-colors"
+                    placeholder="Váš telefon"
                   />
                 </div>
               </div>
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-odra-dark-gray mb-1">
-                  Předmět
+                  Předmět *
                 </label>
                 <input
                   type="text"
                   id="subject"
                   className="w-full px-4 py-2 rounded-md border border-odra-light-gray focus:outline-none focus:ring-2 focus:ring-odra-blue/50 focus:border-odra-blue transition-colors"
                   placeholder="Předmět zprávy"
+                  required
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-odra-dark-gray mb-1">
-                  Zpráva
+                  Zpráva *
                 </label>
                 <textarea
                   id="message"
                   rows={4}
                   className="w-full px-4 py-2 rounded-md border border-odra-light-gray focus:outline-none focus:ring-2 focus:ring-odra-blue/50 focus:border-odra-blue transition-colors"
                   placeholder="Vaše zpráva"
+                  required
                 ></textarea>
+              </div>
+              <div className="text-sm text-odra-dark-gray/70">
+                * Povinné pole
               </div>
               <motion.button
                 type="submit"
