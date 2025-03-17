@@ -23,7 +23,7 @@ const Hero = () => {
               transition={{ duration: 0.8 }}
               className="inline-block px-3 py-1 rounded-full bg-odra-blue/10 text-odra-blue text-sm font-medium"
             >
-              Průmyslové armatury a čerpadla
+              Od roku 1991 na trhu
             </motion.div>
             
             <motion.h1 
@@ -33,7 +33,7 @@ const Hero = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-odra-dark-gray"
             >
               ODRA TRADING <br />
-              <span className="text-odra-blue">Váš dodavatel průmyslových armatur</span>
+              <span className="text-odra-blue">Váš partner pro obchod</span>
             </motion.h1>
             
             <motion.p 
@@ -42,7 +42,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-odra-dark-gray/70 max-w-lg"
             >
-              Společnost ODRA TRADING spol. s r.o. byla založena v roce 1994 jako specializovaná společnost na dodávky průmyslových armatur, čerpadel a jejich příslušenství pro širokou škálu průmyslových odvětví.
+              Společnost ODRA TRADING spol. s r.o. byla založena v roce 1991. Zabýváme se výrobou a velkoobchodem hygienických papírů, obalových materiálů, lněných výrobků, lněného osiva a zemědělskou technikou pro sběr a zpracování lnu.
             </motion.p>
             
             <motion.div 
@@ -57,7 +57,7 @@ const Hero = () => {
                 whileTap={{ scale: 0.97 }}
                 className="px-6 py-3 bg-odra-blue text-white rounded-md font-medium transition-all hover:shadow-lg hover:shadow-odra-blue/20 text-center"
               >
-                Naše produkty
+                Náš sortiment
               </motion.a>
               <motion.a 
                 href="#contact"
@@ -79,8 +79,8 @@ const Hero = () => {
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-odra-blue/90 to-odra-light-blue/90 mix-blend-overlay"></div>
               <img 
-                src="https://images.unsplash.com/photo-1631280413634-02490a650788?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Průmyslové armatury" 
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                alt="Lněné výrobky" 
                 className="w-full h-full object-cover"
               />
             </div>

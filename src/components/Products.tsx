@@ -6,51 +6,51 @@ import { useRef } from "react";
 
 const productCategories = [
   {
-    id: "armatury",
-    name: "Průmyslové armatury",
-    description: "Dodáváme kompletní sortiment průmyslových armatur v širokém spektru materiálových provedení, tlakových tříd, typů připojení, materiálů těsnění a ovládání.",
-    image: "https://images.unsplash.com/photo-1523242942811-8a2bdb077ad0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    id: "hygienicke-papiry",
+    name: "Hygienické papíry",
+    description: "Dodáváme široký sortiment hygienických papírů pro různé účely a potřeby.",
+    image: "https://images.unsplash.com/photo-1597348989645-46b190ce4918?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Uzavírací armatury", description: "Kulové kohouty, Šoupátka, Klapky, Ventily" },
-      { name: "Regulační armatury", description: "Regulační ventily, Klapky a kohouty, Redukční ventily" },
-      { name: "Pojistné armatury", description: "Pojistné ventily, Přerušovače vakua, Odvzdušňovací ventily" },
-      { name: "Speciální armatury", description: "Pro ropný, plynárenský a chemický průmysl" },
+      { name: "Toaletní papír", description: "Různé druhy a kvality toaletního papíru" },
+      { name: "Ubrousky", description: "Papírové ubrousky pro různé použití" },
+      { name: "Utěrky", description: "Papírové utěrky pro domácnost i průmysl" },
+      { name: "Kapesníčky", description: "Papírové kapesníčky v různých baleních" },
     ]
   },
   {
-    id: "cerpadla",
-    name: "Čerpadla",
-    description: "Nabízíme široký sortiment čerpadel pro různá průmyslová odvětví včetně čerpadel pro agresivní a abrazivní média, potravinářský průmysl a čistírny odpadních vod.",
-    image: "https://images.unsplash.com/photo-1596731498067-846ee9d6b9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    id: "obalove-materialy",
+    name: "Obalové materiály",
+    description: "Nabízíme komplexní sortiment obalových materiálů včetně lepenkových trubic a různých druhů obalů.",
+    image: "https://images.unsplash.com/photo-1607344645866-009c320c5ab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Odstředivá čerpadla", description: "Horizontální, Vertikální, Vícestupňová, In-line" },
-      { name: "Objemová čerpadla", description: "Zubová, Vřetenová, Membránová, Pístová" },
-      { name: "Ponorná čerpadla", description: "Pro odpadní vody, Pro chemikálie, S mělnícím zařízením" },
-      { name: "Dávkovací čerpadla", description: "Elektromagnetická, Motorová, Pro chemické procesy" },
+      { name: "Lepenkové trubice", description: "Spirálově i prostě navíjené, průměr 17-400 mm, síla stěny 1-15 mm, délka 12-6000 mm" },
+      { name: "Úhelníky", description: "Běžné i flexibilní úhelníky pro ochranu hran" },
+      { name: "Rámy", description: "Obalové rámy různých velikostí a provedení" },
+      { name: "EKO palety", description: "Ekologické papírové palety pro skladování a přepravu" },
     ]
   },
   {
-    id: "prislusenstvi",
-    name: "Příslušenství",
-    description: "Kompletní sortiment příslušenství pro průmyslové armatury a čerpadla, včetně pohonů, filtrů, kompenzátorů a měřící techniky.",
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    id: "lnene-vyrobky",
+    name: "Lněné výrobky",
+    description: "Specializujeme se na výrobu a distribuci lněných výrobků vysoké kvality pro textilní a papírenský průmysl.",
+    image: "https://images.unsplash.com/photo-1594761046268-310bfabba20f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Pohony", description: "Elektrické, Pneumatické, Hydraulické, Elektrohydraulické" },
-      { name: "Filtry", description: "Y-filtry, Koše, Sací koše, Automatické filtry" },
-      { name: "Kompenzátory", description: "Kovové, Pryžové, PTFE, Tkaninové" },
-      { name: "Měřící technika", description: "Průtokoměry, Tlakoměry, Teploměry, Hladinoměry" },
+      { name: "Třená lnárská koudel", description: "Pro zpracování v textilním a papírenském průmyslu" },
+      { name: "Třené lněné vlákno", description: "Kvalitní lněné vlákno pro různé zpracování" },
+      { name: "Vochlované koudele", description: "Upravené lněné koudele pro další zpracování" },
+      { name: "Česaný len a lněné příze", description: "Vysoce kvalitní len a příze pro textilní průmysl" },
     ]
   },
   {
-    id: "odvetvi",
-    name: "Průmyslová odvětví",
-    description: "Dodáváme produkty pro širokou škálu průmyslových odvětví s důrazem na specifické požadavky jednotlivých aplikací.",
-    image: "https://images.unsplash.com/photo-1453733190371-0a9bedd82893?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    id: "zemedelska-technika",
+    name: "Zemědělská technika",
+    description: "Dodáváme specializovanou zemědělskou techniku pro sběr a zpracování lnu.",
+    image: "https://images.unsplash.com/photo-1629214831042-41268e2026f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Teplárenství a energetika", description: "Armatury pro páru, horkou a teplou vodu" },
-      { name: "Chemický průmysl", description: "Armatury pro agresivní média a nebezpečné látky" },
-      { name: "Vodárenství a čistírny vod", description: "Speciální armatury pro pitnou a odpadní vodu" },
-      { name: "Plynárenství a ropný průmysl", description: "Armatury dle API a dalších standardů" },
+      { name: "Technika pro sběr lnu", description: "Specializované stroje pro sklizeň lnu" },
+      { name: "Zařízení pro zpracování lnu", description: "Technologie pro počáteční zpracování lnu" },
+      { name: "Osivo lnu", description: "Kvalitní lněné osivo pro pěstování" },
+      { name: "Příslušenství", description: "Doplňky a náhradní díly pro zemědělskou techniku" },
     ]
   }
 ];
@@ -86,13 +86,13 @@ const Products = () => {
           className="text-center mb-16"
         >
           <div className="inline-block px-3 py-1 rounded-full bg-odra-blue/10 text-odra-blue text-sm font-medium mb-4">
-            Naše produkty
+            Náš sortiment
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-odra-dark-gray mb-4">
-            Komplexní řešení pro průmysl
+            Komplexní nabídka produktů
           </h2>
           <p className="text-odra-dark-gray/70 max-w-2xl mx-auto">
-            Nabízíme kompletní sortiment průmyslových armatur, čerpadel a příslušenství od renomovaných světových i domácích výrobců s důrazem na dlouhodobou spolehlivost.
+            Nabízíme široký sortiment hygienických papírů, obalových materiálů, lněných výrobků a zemědělské techniky od renomovaných výrobců i z vlastní produkce.
           </p>
         </motion.div>
 

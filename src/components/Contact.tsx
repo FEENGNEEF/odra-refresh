@@ -15,8 +15,8 @@ const Contact = () => {
       title: "Adresa",
       details: [
         "ODRA TRADING spol. s r.o.",
-        "28. října 165",
-        "709 00 Ostrava-Mariánské Hory",
+        "U Parku 10",
+        "702 00 Ostrava",
         "Česká republika"
       ]
     },
@@ -24,37 +24,20 @@ const Contact = () => {
       icon: <Phone className="w-5 h-5" />,
       title: "Kontakty",
       details: [
-        "Tel: +420 596 624 434",
-        "Tel: +420 596 624 432",
-        "Fax: +420 596 624 431"
+        "Tel: +420 596 139 267",
+        "Tel: +420 596 139 268",
+        "Fax: +420 596 114 751",
+        "Mobil: +420 602 530 075",
+        "Mobil: +420 602 545 100"
       ]
     },
     {
       icon: <Mail className="w-5 h-5" />,
       title: "E-mail a web",
       details: [
-        "info@odratrading.cz",
-        "obchod@odratrading.cz",
-        "www.odratrading.cz"
-      ]
-    }
-  ];
-
-  const departments = [
-    {
-      title: "Obchodní oddělení",
-      contacts: [
-        "Ing. Roman Kružík",
-        "Tel: +420 596 624 432",
-        "Email: roman.kruzik@odratrading.cz"
-      ]
-    },
-    {
-      title: "Jednatel společnosti",
-      contacts: [
-        "Ing. Petr Hradil",
-        "Tel: +420 596 624 434",
-        "Email: petr.hradil@odratrading.cz"
+        "E-mail: odra@odra.cz",
+        "E-mail: Petr@odra.cz",
+        "Web: www.odratrading.cz"
       ]
     }
   ];
@@ -76,7 +59,7 @@ const Contact = () => {
           </h2>
           <p className="text-odra-dark-gray/70 max-w-2xl mx-auto">
             Máte-li jakýkoliv dotaz ohledně našich produktů nebo potřebujete poradit s výběrem, neváhejte nás kontaktovat.
-            Náš tým specialistů je připraven vám pomoci.
+            Náš tým je připraven vám pomoci.
           </p>
         </motion.div>
 
@@ -101,29 +84,6 @@ const Contact = () => {
                 {item.details.map((detail, i) => (
                   <p key={i} className="text-odra-dark-gray/70 mb-1">
                     {detail}
-                  </p>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {departments.map((dept, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              className="p-6 rounded-lg bg-white border border-odra-blue/10 shadow-sm hover:shadow-md transition-shadow"
-            >
-              <h3 className="text-lg font-semibold text-odra-dark-gray mb-3">
-                {dept.title}
-              </h3>
-              <div>
-                {dept.contacts.map((contact, i) => (
-                  <p key={i} className="text-odra-dark-gray/70 mb-1">
-                    {contact}
                   </p>
                 ))}
               </div>
