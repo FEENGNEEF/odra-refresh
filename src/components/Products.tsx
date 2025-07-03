@@ -9,7 +9,7 @@ const productCategories = [
     id: "uhelniky-ochranne-hrany",
     name: "Úhelníky a ochranné hrany",
     description: "Dodáváme hrany dle přání zákazníka až do celkové délky 6 m. Běžné i flexibilní úhelníky pro ochranu hran při přepravě.",
-    image: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
       { 
         name: "Běžné úhelníky", 
@@ -25,7 +25,7 @@ const productCategories = [
     id: "ramy",
     name: "Rámy",
     description: "Obalové rámy pro ochranu a fixaci zboží při přepravě a skladování.",
-    image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
       { 
         name: "Ochranné rámy", 
@@ -37,7 +37,7 @@ const productCategories = [
     id: "dutinky-trubice",
     name: "Dutinky a trubice",
     description: "Dodáváme lepenkové trubice spirálově i prostě navíjené v široké škále rozměrů.",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    image: "https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
       { 
         name: "Lepenkové trubice", 
@@ -57,7 +57,7 @@ const productCategories = [
     id: "eko-palety",
     name: "EKO palety",
     description: "Ekologické papírové palety jako alternativa k dřevěným paletám. Šetrné k životnímu prostředí.",
-    image: "https://images.unsplash.com/photo-1566576658751-422bd2ac4ea1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
       { 
         name: "Papírové palety", 
@@ -111,19 +111,19 @@ const Products = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-odra-dark-gray mb-4">
             Obalové materiály
           </h2>
-          <div className="max-w-4xl mx-auto text-left">
+          <div className="max-w-4xl mx-auto text-center">
             <p className="text-odra-dark-gray/70 mb-4">
               Papírové obalové materiály se řadí mezi prvky fixačních a obalových materiálů. Vyznačují se vysokou pevností a odolností proti nárazu. Jsou šetrné vzhledem k životnímu prostředí a cenově velmi výhodné.
             </p>
             <p className="text-odra-dark-gray/70 mb-4">
               Díky široké rozmanitosti vyráběných rozměrů a už vzpomínané pevnosti nacházejí tyto obalové materiály uplatnění při ochraně zboží v logistice i v mnoha dalších průmyslových odvětví.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 max-w-2xl mx-auto">
+              <div className="text-center">
                 <h3 className="font-semibold text-odra-dark-gray mb-2">Použitý materiál:</h3>
                 <p className="text-odra-dark-gray/70">recyklovaný papír, kartón, kraftliner, testliner</p>
               </div>
-              <div>
+              <div className="text-center">
                 <h3 className="font-semibold text-odra-dark-gray mb-2">Dodáváme:</h3>
                 <p className="text-odra-dark-gray/70">lepenkové proložky v gramáži 200 - 800 gr/m²</p>
               </div>
