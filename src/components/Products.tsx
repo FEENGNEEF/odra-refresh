@@ -106,14 +106,35 @@ const Products = () => {
           className="text-center mb-16"
         >
           <div className="inline-block px-3 py-1 rounded-full bg-odra-blue/10 text-odra-blue text-sm font-medium mb-4">
-            Náš sortiment
+            V souladu s přírodou
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-odra-dark-gray mb-4">
-            Komplexní nabídka produktů
+            Obalové materiály
           </h2>
-          <p className="text-odra-dark-gray/70 max-w-2xl mx-auto">
-            Specializujeme se na obalové materiály vyznačující se vysokou pevností a odolností proti nárazu. Papírové obalové materiály jsou šetrné k životnímu prostředí a cenově velmi výhodné.
-          </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <p className="text-odra-dark-gray/70 mb-4">
+              Papírové obalové materiály se řadí mezi prvky fixačních a obalových materiálů. Vyznačují se vysokou pevností a odolností proti nárazu. Jsou šetrné vzhledem k životnímu prostředí a cenově velmi výhodné.
+            </p>
+            <p className="text-odra-dark-gray/70 mb-4">
+              Díky široké rozmanitosti vyráběných rozměrů a už vzpomínané pevnosti nacházejí tyto obalové materiály uplatnění při ochraně zboží v logistice i v mnoha dalších průmyslových odvětví.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h3 className="font-semibold text-odra-dark-gray mb-2">Použitý materiál:</h3>
+                <p className="text-odra-dark-gray/70">recyklovaný papír, kartón, kraftliner, testliner</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-odra-dark-gray mb-2">Dodáváme:</h3>
+                <p className="text-odra-dark-gray/70">lepenkové proložky v gramáži 200 - 800 gr/m²</p>
+              </div>
+            </div>
+            <p className="text-odra-dark-gray/70 text-center">
+              Máte-li zájem, případně dotaz, kontaktujte nás prosím na{" "}
+              <a href="mailto:odra@odratrading.cz" className="text-odra-blue hover:underline">odra@odratrading.cz</a>
+              {" "}nebo{" "}
+              <a href="mailto:petr@odra.cz" className="text-odra-blue hover:underline">petr@odra.cz</a>
+            </p>
+          </div>
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
