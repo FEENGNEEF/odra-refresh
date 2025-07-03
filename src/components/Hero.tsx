@@ -42,7 +42,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-odra-dark-gray/70 max-w-lg"
             >
-              Společnost ODRA TRADING spol. s r.o. byla založena v roce 1991. Zabýváme se výrobou a velkoobchodem hygienických papírů, obalových materiálů, lněných výrobků, lněného osiva a zemědělskou technikou pro sběr a zpracování lnu.
+              Společnost ODRA TRADING spol. s r.o. působí na trhu od roku 1991. Specializujeme se na distribuci a velkoobchod obalových materiálů s mezinárodními partnery ze Slovenska, Polska, Rakouska, Slovinska, Běloruska, Ukrajiny a Ruska.
             </motion.p>
             
             <motion.div 
@@ -79,8 +79,8 @@ const Hero = () => {
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-odra-blue/90 to-odra-light-blue/90 mix-blend-overlay"></div>
               <img 
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Lněné výrobky" 
+                src="https://images.unsplash.com/photo-1607344645866-009c320c5ab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                alt="Obalové materiály" 
                 className="w-full h-full object-cover"
               />
             </div>

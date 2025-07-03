@@ -99,13 +99,13 @@ const Contact = () => {
             className="rounded-lg overflow-hidden shadow-lg h-[400px]"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.768992606799!2d18.2364419!3d49.8312073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDQ5JzUyLjMiTiAxOMKwMTQnMTEuMiJF!5e0!3m2!1scs!2scz!4v1620928416972!5m2!1scs!2scz"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.9534394434977!2d18.234832115726436!3d49.82986797939516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e315c3faca2b%3A0x1f8f1f8f1f8f1f8f!2sU%20Parku%2010%2C%20702%2000%20Ostrava%2C%20Czech%20Republic!5e0!3m2!1scs!2scz!4v1620928416972!5m2!1scs!2scz"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              title="Mapa sídla společnosti"
+              title="Mapa sídla společnosti - U Parku 10, Ostrava"
             ></iframe>
           </motion.div>
 

@@ -6,51 +6,71 @@ import { useRef } from "react";
 
 const productCategories = [
   {
-    id: "hygienicke-papiry",
-    name: "Hygienické papíry",
-    description: "Dodáváme široký sortiment hygienických papírů pro různé účely a potřeby.",
-    image: "https://images.unsplash.com/photo-1597348989645-46b190ce4918?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    id: "uhelniky-ochranne-hrany",
+    name: "Úhelníky a ochranné hrany",
+    description: "Dodáváme hrany dle přání zákazníka až do celkové délky 6 m. Běžné i flexibilní úhelníky pro ochranu hran při přepravě.",
+    image: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Toaletní papír", description: "Různé druhy a kvality toaletního papíru" },
-      { name: "Ubrousky", description: "Papírové ubrousky pro různé použití" },
-      { name: "Utěrky", description: "Papírové utěrky pro domácnost i průmysl" },
-      { name: "Kapesníčky", description: "Papírové kapesníčky v různých baleních" },
+      { 
+        name: "Běžné úhelníky", 
+        description: "Výška hrany: 30-100 mm, síla hrany: 1-8 mm, délka: max 6 m" 
+      },
+      { 
+        name: "Flexibilní úhelníky", 
+        description: "Výška hrany: 35-60 mm, síla hrany: 1-3 mm, délka modulu: 40-60 mm, délka: 800-4000 mm" 
+      },
     ]
   },
   {
-    id: "obalove-materialy",
-    name: "Obalové materiály",
-    description: "Nabízíme komplexní sortiment obalových materiálů včetně lepenkových trubic a různých druhů obalů.",
-    image: "https://images.unsplash.com/photo-1607344645866-009c320c5ab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    id: "ramy",
+    name: "Rámy",
+    description: "Obalové rámy pro ochranu a fixaci zboží při přepravě a skladování.",
+    image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Lepenkové trubice", description: "Spirálově i prostě navíjené, průměr 17-400 mm, síla stěny 1-15 mm, délka 12-6000 mm" },
-      { name: "Úhelníky", description: "Běžné i flexibilní úhelníky pro ochranu hran" },
-      { name: "Rámy", description: "Obalové rámy různých velikostí a provedení" },
-      { name: "EKO palety", description: "Ekologické papírové palety pro skladování a přepravu" },
+      { 
+        name: "Ochranné rámy", 
+        description: "Výška hrany: 35-60 mm, síla hrany: 2-4 mm" 
+      },
     ]
   },
   {
-    id: "lnene-vyrobky",
-    name: "Lněné výrobky",
-    description: "Specializujeme se na výrobu a distribuci lněných výrobků vysoké kvality pro textilní a papírenský průmysl.",
-    image: "https://images.unsplash.com/photo-1594761046268-310bfabba20f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    id: "dutinky-trubice",
+    name: "Dutinky a trubice",
+    description: "Dodáváme lepenkové trubice spirálově i prostě navíjené v široké škále rozměrů.",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Třená lnárská koudel", description: "Pro zpracování v textilním a papírenském průmyslu" },
-      { name: "Třené lněné vlákno", description: "Kvalitní lněné vlákno pro různé zpracování" },
-      { name: "Vochlované koudele", description: "Upravené lněné koudele pro další zpracování" },
-      { name: "Česaný len a lněné příze", description: "Vysoce kvalitní len a příze pro textilní průmysl" },
+      { 
+        name: "Lepenkové trubice", 
+        description: "Průměr: 17-400 mm, síla stěny: 1-15 mm, délka: 12-6000 mm" 
+      },
+      { 
+        name: "Spirálově navíjené", 
+        description: "Vyšší pevnost, vhodné pro náročnější aplikace" 
+      },
+      { 
+        name: "Prostě navíjené", 
+        description: "Ekonomická varianta pro standardní použití" 
+      },
     ]
   },
   {
-    id: "zemedelska-technika",
-    name: "Zemědělská technika",
-    description: "Dodáváme specializovanou zemědělskou techniku pro sběr a zpracování lnu.",
-    image: "https://images.unsplash.com/photo-1629214831042-41268e2026f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    id: "eko-palety",
+    name: "EKO palety",
+    description: "Ekologické papírové palety jako alternativa k dřevěným paletám. Šetrné k životnímu prostředí.",
+    image: "https://images.unsplash.com/photo-1566576658751-422bd2ac4ea1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     products: [
-      { name: "Technika pro sběr lnu", description: "Specializované stroje pro sklizeň lnu" },
-      { name: "Zařízení pro zpracování lnu", description: "Technologie pro počáteční zpracování lnu" },
-      { name: "Osivo lnu", description: "Kvalitní lněné osivo pro pěstování" },
-      { name: "Příslušenství", description: "Doplňky a náhradní díly pro zemědělskou techniku" },
+      { 
+        name: "Papírové palety", 
+        description: "Ekologická alternativa k dřevěným paletám" 
+      },
+      { 
+        name: "Lehké palety", 
+        description: "Nižší hmotnost při zachování nosnosti" 
+      },
+      { 
+        name: "Jednorázové palety", 
+        description: "Ideální pro export bez nutnosti vrácení" 
+      },
     ]
   }
 ];
@@ -92,7 +112,7 @@ const Products = () => {
             Komplexní nabídka produktů
           </h2>
           <p className="text-odra-dark-gray/70 max-w-2xl mx-auto">
-            Nabízíme široký sortiment hygienických papírů, obalových materiálů, lněných výrobků a zemědělské techniky od renomovaných výrobců i z vlastní produkce.
+            Specializujeme se na obalové materiály vyznačující se vysokou pevností a odolností proti nárazu. Papírové obalové materiály jsou šetrné k životnímu prostředí a cenově velmi výhodné.
           </p>
         </motion.div>
 

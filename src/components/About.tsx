@@ -24,7 +24,7 @@ const features = [
   {
     icon: <TrendingUp className="w-6 h-6" />,
     title: "Komplexní sortiment",
-    description: "Od hygienických papírů po zemědělskou techniku pro zpracování lnu"
+    description: "Úhelníky, ochranné hrany, rámy, dutinky, trubice a EKO palety"
   },
   {
     icon: <FileCheck className="w-6 h-6" />,
@@ -60,7 +60,7 @@ const About = () => {
                 ODRA TRADING
               </h2>
               <p className="text-odra-dark-gray/70">
-                Jsme specializovaná společnost s více než 30letou tradicí v oblasti výroby a velkoobchodu s hygienickými papíry, obalovými materiály, lněnými výrobky a zemědělskou technikou.
+                Jsme specializovaná společnost s více než 30letou tradicí v oblasti distribuce a velkoobchodu obalových materiálů.
               </p>
             </motion.div>
 
@@ -71,13 +71,13 @@ const About = () => {
               className="mb-8"
             >
               <p className="text-odra-dark-gray/70 mb-4">
-                Naše společnost vznikla v roce 1991 jako specializovaná firma na distribuci a velkoobchod s obalovými materiály, lněnými výrobky, hygienickými papíry a lněným osivem. Od té doby jsme si vybudovali silnou pozici na trhu a stali jsme se spolehlivým partnerem pro mnoho firem v České republice i v zahraničí.
+                Naše společnost působí na trhu od roku 1991 a specializuje se na distribuci a velkoobchod obalových materiálů. Papírové obalové materiály se řadí mezi prvky fixačních a obalových materiálů vyznačující se vysokou pevností a odolností proti nárazu.
               </p>
               <p className="text-odra-dark-gray/70 mb-4">
-                Zaměřujeme se na dodávky širokého sortimentu produktů, včetně lepenkových trubic (17-400 mm průměr), hygienických papírů, lněných výrobků pro textilní a papírenský průmysl a zemědělské techniky pro sběr a zpracování lnu.
+                Používaný materiál: recyklovaný papír, kartón, kraftliner, testliner. Dodáváme lepenkové proložky v gramáži 200 - 800 gr/m². Díky široké rozmanitosti vyráběných rozměrů a vysoké pevnosti nacházejí tyto obalové materiály uplatnění při ochraně zboží v logistice i v mnoha dalších průmyslových odvětví.
               </p>
               <p className="text-odra-dark-gray/70">
-                Udržujeme dlouhodobé obchodní vztahy s partnery ze Slovenska, Polska, Rakouska, Slovinska, Běloruska, Ukrajiny a Ruska, což nám umožňuje nabízet rozmanitý sortiment kvalitních produktů.
+                Udržujeme dlouhodobé obchodní vztahy s partnery z České republiky, Slovenska, Polska, Rakouska, Slovinska, Běloruska, Ukrajiny a Ruska, což nám umožňuje nabízet rozmanitý sortiment kvalitních obalových materiálů.
               </p>
             </motion.div>
 
