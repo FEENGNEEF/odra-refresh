@@ -79,7 +79,7 @@ const Hero = () => {
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-odra-blue/90 to-odra-light-blue/90 mix-blend-overlay"></div>
               <img 
-                src="https://images.unsplash.com/photo-1607344645866-009c320c5ab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                src="/Odratrading auto.png" 
                 alt="Obalové materiály" 
                 className="w-full h-full object-cover"
               />

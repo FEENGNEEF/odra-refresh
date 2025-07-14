@@ -33,7 +33,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#home" className="flex items-center">
+        <a href="#home" className="flex items-center space-x-3">
+          <img 
+            src="/Odratrading logo.png" 
+            alt="ODRA TRADING Logo" 
+            className="h-10 w-auto"
+          />
           <motion.div 
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
