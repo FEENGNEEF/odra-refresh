@@ -9,7 +9,7 @@ const productCategories = [
     id: "uhelniky-ochranne-hrany",
     name: "Úhelníky a ochranné hrany",
     description: "Dodáváme hrany dle přání zákazníka až do celkové délky 6 m. Běžné i flexibilní úhelníky pro ochranu hran při přepravě.",
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    image: "/Odratrading auto.png",
     products: [
       { 
         name: "Běžné úhelníky", 
